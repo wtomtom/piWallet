@@ -16,6 +16,7 @@ if (!empty($msg))
 <thead>
    <tr>
       <td nowrap>Username</td>
+      <td nowrap>Newcoin</td>
       <td nowrap>Created</td>
       <td nowrap>Is admin?</td>
       <td nowrap>Is locked?</td>
@@ -30,6 +31,7 @@ if (!empty($msg))
       echo '<tr>
                <td>' . $user['username'] . '</td>
                <td>' . $user['date'] . '</td>
+               <td>' . $user['newcoin'] . '</td>
                <td>' . ($user['admin'] ? '<strong>Yes</strong> <a href="?a=home&m=deadmin&i=' . $user['id'] . '">De-admin</a>' : 'No <a href="?a=home&m=admin&i=' . $user['id'] . '">Make admin</a>') . '</td>
                <td>' . ($user['locked'] ? '<strong>Yes</strong> <a href="?a=home&m=unlock&i=' . $user['id'] . '">Unlock</a>' : 'No <a href="?a=home&m=lock&i=' . $user['id'] . '">Lock</a>') . '</td>
                <td>' . $user['ip'] . '</td>
