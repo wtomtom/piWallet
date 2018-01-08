@@ -2,7 +2,7 @@
 define("IN_WALLET", true);
 include('common.php');
 
-$mysqli = new Mysqli($db_host, $db_user, $db_pass, $db_name);
+$mysqli = new Mysqli($db_host, $db_user, $db_pass, $db_name , $db_newcoin);
 if (!empty($_SESSION['user_session'])) {
     if(empty($_SESSION['token'])) {
         $_SESSION['token'] = sha1('@s%a$l£t#'.rand(0,10000));
