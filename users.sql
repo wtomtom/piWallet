@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `date` varchar(300) NOT NULL,
   `ip` varchar(30) NOT NULL,
   `username` varchar(65) NOT NULL,
+  `newcoin` varchar(65) DEFAULT NULL,
   `password` varchar(300) NOT NULL,
   `admin` varchar(1) DEFAULT NULL,
   `locked` varchar(1) DEFAULT NULL,
@@ -44,8 +45,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `date`, `ip`, `username`, `password`, `admin`, `locked`) VALUES
-(1, '', 'localhost', 'piWallet', '4cb9c8a8048fd02294477fcb1a41191a', '1', NULL);
+INSERT INTO `users` (`id`, `date`, `ip`, `username`, `newcoin`, `password`, `admin`, `locked`) VALUES
+(1, '', 'localhost', 'piWallet', 'vizeh', '4cb9c8a8048fd02294477fcb1a41191a', '1', NULL);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
