@@ -18,8 +18,13 @@
                 <p><?php echo $lang['FORM_CREATE']; ?></p>
                 <form action="index.php" method="POST" class="clearfix">
                     <input type="hidden" name="action" value="register" />
-                    <div class="col-md-2"><input type="text" class="form-control" name="username" placeholder="<?php echo $lang['FORM_USER']; ?>"></div>
-                    <div class="col-md-2"><input type="password" class="form-control" name="password" placeholder="<?php echo $lang['FORM_PASS']; ?>"></div>
+            
+                  <div class="col-md-2"><input type="text" class="form-control" name="username" placeholder="<?php echo $lang['FORM_USER']; ?>"></div>
+                  
+                    <div class="col-md-2"><input type="text" class="form-control" name="newcoin" placeholder="<?php echo $lang['FORM_USER']; ?>"></div>
+
+                  
+                  <div class="col-md-2"><input type="password" class="form-control" name="password" placeholder="<?php echo $lang['FORM_PASS']; ?>"></div>
                     <div class="col-md-2"><input type="password" class="form-control" name="confirmPassword" placeholder="<?php echo $lang['FORM_PASSCONF']; ?>"></div>
                     <div class="col-md-2"><button type="submit" class="btn btn-default"><?php echo $lang['FORM_SIGNUP']; ?></button></div>
                 </form>
